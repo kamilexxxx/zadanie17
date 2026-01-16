@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Deklaracja funkcji obliczaj¹cej objêtoœæ prostopad³oœcianu
 float objetoscProstopadloscianu(float a, float b, float c)
 {
     return a * b * c;
