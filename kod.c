@@ -1,27 +1,30 @@
 #include <stdio.h>
 
-float volume_cuboid(float a, float b, float h) {
-	return(a*b*h);
+// Deklaracja funkcji obliczaj¹cej objêtoœæ prostopad³oœcianu
+float objetoscProstopadloscianu(float a, float b, float c)
+{
+    return a * b * c;
 }
 
-void calculate_volume_cuboid() {
-	float a, b, h;
-
-	printf("Podaj dlugosc boku a: ");
-	scanf("%f", &a);
-
-	printf("Podaj dlugosc boku b: ");
-	scanf("%f", &b);
-
-	printf("Podaj wysokosc h: ");
-	scanf("%f", &h);
-
-	printf("Objetosc prostopadloscianu: %f\n", volume_cuboid(a, b, h));
-}
+int main()
+{
+    float a, b, c, objetosc;
 
 
-int main() {
-	calculate_volume_cuboid();
+    printf("Podaj dlugosc prostopadloscianu: ");
+    scanf("%f", &a);
 
-	return(0);
+    printf("Podaj szerokosc prostopadloscianu: ");
+    scanf("%f", &b);
+
+    printf("Podaj wysokosc prostopadloscianu: ");
+    scanf("%f", &c);
+
+
+    objetosc = objetoscProstopadloscianu(a, b, c);
+
+
+    printf("Objetosc prostopadloscianu wynosi: %.2f\n", objetosc);
+
+    return 0;
 }
